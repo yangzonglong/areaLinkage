@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>地区联动选择</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/common.css" />
+	</head>
+	<body>
+		<input type="text" value="点我选择地区" id='input1'/>
+		<input type="text" value="点我选择地区2" id='input2'/>
+		
+		</div>
+		<!-- 地区联动 -->
+		<div class="m-areaLinkage" id="j-areaLinkage" style="display: none;">
+			<div class="menu">
+				<a class="on" href="javascript:;">省份</a>
+				<a href="javascript:;">城市</a>
+				<a href="javascript:;">地区</a>
+			</div>
+			<div class="region">
+				<div class="on"></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+		<!-- /地区联动 -->
+		
+		<script src="js/areaData.js"></script>
+		<script src="js/areaLinkage.js"></script>
+		<script>
+			areaLinkage(document.getElementById('input1'));
+			areaLinkage(document.getElementById('input2'));
+			//有bug请通知我，谢谢了...qq871387321
+		</script>
+	</body>
+</html>
